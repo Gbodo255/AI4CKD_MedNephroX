@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'nunito';
+    src: url('/css/fonts/Nunito-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'nunitonold';
+    src: url('/css/fonts/Nunito-ExtraBold.ttf') format('truetype');
+}
+
+body{
+    background-color: white;
+    padding: 0%;
+    margin: 0%;
+}
+
+.content {
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    height: auto;
+    padding: 0%;
+    margin-top: 10%;
+}
+
+.content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1144c6;
+    font-family: 'nunitonold';
+    margin: 0%;
+    padding: 0%;
+}
+
+.content h2 {
+    font-size: 20px;
+    font-family: 'nunito';
+    margin-top: 0%;
+    margin-bottom: 7%;
+    padding: 0%;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'nunito';
+    font-weight: 400;
+    margin-top: 0%;
+    margin-bottom: 7%;
+    padding: 0%;
+}
+
+.myform {
+    text-align: left;
+    display: block;
+    margin-left: 6%;
+    padding: 0%;
+}
+
+.champ {
+    display: block;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.champ input {
+    width: 550px;
+    height: 45px;
+    margin-top: 0.5%;
+    background-color: white;
+    border: 0.5px solid gray;
+    border-radius: 4px;
+    color: black;
+    font-family: 'nunito';
+    font-size: 20px;
+}
+
+.champ input:focus {
+    outline: none; 
+    border: 2px solid #1144c6;
+    box-shadow: 2px 2px 1px 1px rgba(0, 123, 255, 0.5); 
+    transition: 0.3s;
+  }
+
+.champ label {
+    font-size: 18px;
+    font-family: 'nunito';
+    color: gray;
+}
+
+.soumission {
+    width: 552px;
+    height: 45px;
+    margin-top: 1%;
+    background-color: whitesmoke;
+    border: 0.5px solid #1144c6;
+    border-radius: 4px;
+    background-color: #1144c6;
+    color: white;
+    font-size: 20px;
+    font-family: 'nunito';
+    margin-left: 2.5%;
+}
+  
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+        margin-top: 20%;
+    }
+
+    .champ input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .soumission {
+        width: 100%;
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .myform {
+        margin-left: 0;
+        padding: 0 5%;
+    }
+}

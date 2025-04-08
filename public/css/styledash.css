@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'nunito';
+    src: url('/css/fonts/Nunito-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'nunitonold';
+    src: url('/css/fonts/Nunito-ExtraBold.ttf') format('truetype');
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #8587961f;
+}
+
+.content {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+}
+
+.sidebar {
+    border: 1px solid #4e73df;
+    background-color: #4e73df;
+    width: 210px;
+    height: 642px;
+    position: fixed;
+    display: block;
+}
+
+.logo {
+    padding-bottom: 8.5%;
+    padding-top: 3%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'nunitonold';
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.lien {
+    display: block;
+    margin-top: 25%;
+}
+
+.bouton {
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+}
+
+.bouton a {
+    display: block;
+    font-size: 20px;
+    font-family: 'nunito';
+    height: 30px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 15%;
+    margin-bottom: 3%;
+    text-decoration: none;
+    color: white;
+}
+
+.another {
+    margin-top: 75%;
+}
+
+.another a {
+    display: block;
+    display: block;
+    font-size: 20px;
+    font-family: 'nunito';
+    height: 30px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 15%;
+    margin-bottom: 3%;
+    text-decoration: none;
+    color: white;
+}
+
+.logout {
+    color: #e74a3b;
+    display: block;
+    display: block;
+    font-size: 20px;
+    font-family: 'nunito';
+    height: 30px;
+    padding-left: 15%;
+    text-decoration: none;
+    border: none;
+    background-color: #4e73df;
+}
+
+.workspace {
+    display: block;
+    margin-left: 210px;
+}
+
+.navbar {
+    width: 1013px;
+    height: 52px;
+    background-color: white;
+    padding-top: 1.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.part2 {
+    display: flex;
+    padding: 0%;
+    margin-right: 4%;
+    margin-top: -0.5%;
+    width: 140px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.name {
+    margin: 0%;
+    padding: 0%;
+    padding-top: 8%;
+}
+
+.profil {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.part1 input {
+    width: 380px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.part1 {
+    padding: 0%;
+    margin-left: 4%;
+}
+
+.spacework {
+    width: 1013px;
+    height: auto;
+    display: flex;
+}
+
+.notify {
+    border: 1px solid black;
+    width: 250px;
+    height: 300px;
+    height: auto;
+}
+
+.space {
+    width: 763px;
+    height: 300px;
+    border: 1px solid black;
+    height: auto;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.statistiques {
+    height: 115px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.total {
+    border: 1px solid white;
+    width: 210px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1%;
+    font-family: 'nunito';
+    font-size: 25px;
+}
+
+.preums {
+    color: #4e73df;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 1%;
+    width: 150px;
+}
+
+.second {
+    color: rgb(61, 57, 57);
+    font-size: 28px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.grave {
+    border: 1px solid white;
+    width: 210px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1%;
+    font-family: 'nunito';
+    font-size: 25px;
+}
+
+.traite {
+    border: 1px solid white;
+    width: 210px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1%;
+    font-family: 'nunito';
+    font-size: 25px;
+}
+
+.graphes {
+    height: 100px;
+    border: 1px solid black;
+}
+
+.patients {
+    height: 100px;
+    border: 1px solid black;
+}

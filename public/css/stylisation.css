@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'nunito';
+    src: url('/css/fonts/Nunito-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'nunitonold';
+    src: url('/css/fonts/Nunito-ExtraBold.ttf') format('truetype');
+}
+
+body {
+    background-color: #1144c6;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'nunito';
+    display: flex;
+    position: fixed;
+}
+
+.content {
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+}
+
+.texte {
+    border: 1px solid white;
+    width: 600px;
+    height: 642px;
+    padding-top: 6%;
+    border-radius: 0px 0px 0px 0px;
+    text-align: left;
+    background-color: white;
+    position: fixed;
+
+}
+
+.title {
+    font-size: 35px;
+    font-family: 'nunitonold';
+    padding-left: 6%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.choice {
+    padding: 0%;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    text-align: left;
+    padding-left: 17%;
+}
+
+.champ {
+    display: block;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-size: 15px;
+}
+
+.champ input {
+    width: 380px;
+    height: 30px;
+    margin-top: 1.5%;
+    background-color: white;
+    border: 0.5px solid gray;
+    border-radius: 4px;
+    color: black;
+    font-family: 'nunito';
+    font-size: 20px;
+}
+
+.champ label {
+    font-size: 18px;
+    font-family: 'nunito';
+    color: gray;
+}
+
+.champ input:focus {
+    outline: none;
+    border: 2px solid #1144c6;
+    box-shadow: 2px 2px 1px 1px rgba(0, 123, 255, 0.5);
+    transition: 0.3s;
+}
+
+i {
+    border: 1px solid #1144c6;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 5%;
+    color: white;
+    background-color: #1144c6;
+}
+
+.second {
+    margin-top: 6.5%;
+    font-size: 15px;
+}
+
+.champ1 {
+    width: 380px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.soumission {
+    width: 380px;
+    height: 35px;
+    margin-top: 1%;
+    background-color: whitesmoke;
+    border: 0.5px solid #1144c6;
+    border-radius: 4px;
+    background-color: #1144c6;
+    color: white;
+    font-size: 20px;
+    font-family: 'nunito';
+    margin-left: 2.5%;
+}
+
+.soumission a {
+    color: white;
+    font-family: 'nunito';
+    text-decoration: none;
+}
+
+.third {
+    margin-left: -4%;
+}
+
+.check {
+    outline: none;
+    border: 2px solid #1144c6;
+    box-shadow: 2px 2px 1px 1px rgba(0, 123, 255, 0.5);
+    transition: 0.3s;
+    /* Animation fluide */
+    color: #1144c6;
+}
+
+a {
+    color: #1144c6;
+}
+
+.logo {
+    margin-left: 988px;
+    margin-top: 1%;
+    font-family: 'nunitonold';
+    color: white;
+    font-size: 35px;
+}
+
+/* .illustration {
+    border: 1px solid black;
+    margin-left: 600px;
+    height: 642px;
+    width: 619px;
+    text-align: center;
+}
+
+img {
+    height: 600px;
+    width: 630px;
+} */  
