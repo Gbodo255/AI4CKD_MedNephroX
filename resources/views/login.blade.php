@@ -13,17 +13,18 @@
         <h1>MedNephroX</h1>
         <p>Faciliter la gestion de vos patients avec MedNephroX.</p>
         <h2>Entrez vos données de connexion afin d'accédez à votre compte.</h2>
-        <div class="myform">
+        <form class="myform" action="{{ route('logitraitpage') }}" method="post">
+            @csrf
             <div class="champ">
                 <label for="">Nom utilisateur</label> <br>
-                <input type="text">
+                <input type="email" name="email" id="email">
             </div>
             <div class="champ">
                 <label for="">Mot de passe</label> <br>
-                <input type="password">
+                <input type="password" name="motDePasse" id="motDePasse">
             </div>
-            <a href=""><input type="submit" value="Soumettre" class="soumission"></a>
-        </div>
+            <input type="submit" value="Soumettre" class="soumission">
+        </form>
     </div>
 </body>
 

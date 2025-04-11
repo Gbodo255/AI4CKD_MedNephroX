@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SigninController;
 use App\Http\Controllers\DashboardController;
+use League\CommonMark\Extension\SmartPunct\DashParser;
 
 //Affichage de la page d'accueil
 Route::get('/', function () {
@@ -12,6 +13,7 @@ Route::get('/', function () {
 
 //Controller de la page de connexion
 Route::get('/login', [LoginController::class, 'login'])->name('connexion');
+Route::post('/logtrait', [LoginController::class, 'traitlogin'])->name('logitraitpage');
 
 
 //Controller de la page d'inscription
@@ -22,3 +24,9 @@ Route::post('/signtrait', [SigninController::class, 'traitsign'])->name('traitem
 //Controller de la page de dashboard
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashoard');
 
+Route::get('/patientVue', [DashboardController::class, 'liste'])->name('listepatient');
+Route::get('/patient', [DashboardController::class, 'patient'])->name('patient');
+Route::post('/trait', [DashboardController::class, 'traitpatient'])->name('traitpage');
+
+Route::get('/visit', [DashboardController::class, 'visit'])->name('visit');
+Route::post('/traitvisit', [DashboardController::class, 'visitpatient'])->name('visitpatient');
