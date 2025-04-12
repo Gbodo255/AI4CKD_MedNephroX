@@ -68,13 +68,13 @@
         </div>
         <div class="statisti">
             <div class="stats">
-
+                +500 utilisateurs
             </div>
             <div class="stats">
-    
+                +28 popitales
             </div>
             <div class="stats">
-    
+                +350 médecins connectés
             </div>
         </div>
     </div>
@@ -83,7 +83,35 @@
 
         </div>
         <div class="footer">
-
+            <div class="number1">
+                <div class="name">
+                    MedNephroX
+                    <p class="descri">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae ducimus vero, deserunt delectus libero laudantium
+                    </p>
+                </div>
+                <div class="liens">
+                    <p>Accueil</p>
+                    <p>Nos services</p>
+                    <p>A propos</p>
+                    <p>Contact</p>
+                </div>
+                <div class="contactsLiens">
+                    <p><i></i>MedNephroX@gmail.com</p>
+                    <p><i></i>MedNephroX@gmail.com</p>
+                    <p><i></i>MedNephroX@gmail.com</p>
+                    <p><i></i>MedNephroX@gmail.com</p>
+                </div>
+                <div class="reseau">
+                    <p><i></i>MedNephroX@gmail.com</p>
+                    <p><i></i>MedNephroX@gmail.com</p>
+                    <p><i></i>MedNephroX@gmail.com</p>
+                    <p><i></i>MedNephroX@gmail.com</p>
+                </div>
+            </div>
+            <div class="final">
+                <p>AI4CKD_MedNephroX Solutions from HACK4IFRI</p>
+            </div>
         </div>
     </div>
 </body>

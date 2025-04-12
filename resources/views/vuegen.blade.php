@@ -12,27 +12,38 @@
         .patient-info-modal .modal-body {
             padding: 20px;
         }
+
         .patient-info-section {
             margin-bottom: 20px;
         }
+
         .patient-info-section h5 {
             border-bottom: 1px solid #eee;
             padding-bottom: 5px;
             margin-bottom: 15px;
         }
+
         .info-row {
             display: flex;
             margin-bottom: 10px;
         }
+
         .info-label {
             font-weight: bold;
             width: 150px;
         }
+
         .info-value {
             flex: 1;
         }
+
         .download-btn {
             margin-top: 20px;
+        }
+
+        .workspace {
+            display: block;
+            margin-left: 220px;
         }
     </style>
 </head>
@@ -86,18 +97,18 @@
                         <tbody>
                             @foreach ($patients as $index => $patient)
                             <tr>
-                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#patientInfoModal" 
-                                       data-patient-id="{{ $patient->id }}"
-                                       data-patient-name="{{ $patient->name }}"
-                                       data-patient-surname="{{ $patient->surname }}"
-                                       data-patient-naissance="{{ $patient->naissance }}"
-                                       data-patient-sexe="{{ $patient->sexe }}"
-                                       data-patient-adresse="{{ $patient->adresse }}"
-                                       data-patient-phone="{{ $patient->phoneNumber }}"
-                                       data-patient-email="{{ $patient->email }}"
-                                       data-patient-created="{{ $patient->created_at->format('d/m/Y') }}">
-                                    {{ $index + 1 }}
-                                </a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#patientInfoModal"
+                                        data-patient-id="{{ $patient->id }}"
+                                        data-patient-name="{{ $patient->name }}"
+                                        data-patient-surname="{{ $patient->surname }}"
+                                        data-patient-naissance="{{ $patient->naissance }}"
+                                        data-patient-sexe="{{ $patient->sexe }}"
+                                        data-patient-adresse="{{ $patient->adresse }}"
+                                        data-patient-phone="{{ $patient->phoneNumber }}"
+                                        data-patient-email="{{ $patient->email }}"
+                                        data-patient-created="{{ $patient->created_at->format('d/m/Y') }}">
+                                        {{ $index + 1 }}
+                                    </a></td>
                                 <td>{{ $patient->name }}</td>
                                 <td>{{ $patient->surname }}</td>
                                 <td>{{ $patient->sexe }}</td>
@@ -172,9 +183,9 @@
 
                 <script>
                     // Lorsque la modale patientInfoModal est affichée
-                    document.getElementById('patientInfoModal').addEventListener('show.bs.modal', function (event) {
+                    document.getElementById('patientInfoModal').addEventListener('show.bs.modal', function(event) {
                         var button = event.relatedTarget; // Bouton qui a déclenché la modale
-                        
+
                         // Récupérer les données du patient
                         var patientName = button.getAttribute('data-patient-name');
                         var patientSurname = button.getAttribute('data-patient-surname');
@@ -185,10 +196,10 @@
                         var patientEmail = button.getAttribute('data-patient-email');
                         var patientCreated = button.getAttribute('data-patient-created');
                         var patientId = button.getAttribute('data-patient-id');
-                        
+
                         // Mettre à jour le titre de la modale
                         document.getElementById('patientInfoLabel').textContent = 'Dossier Patient: ' + patientName + ' ' + patientSurname;
-                        
+
                         // Construire le contenu HTML
                         var content = `
                             <div class="patient-info-section">
@@ -247,30 +258,32 @@
                                 </div>
                             </div>
                         `;
-                        
+
                         // Insérer le contenu dans la modale
                         document.getElementById('patientInfoContent').innerHTML = content;
                     });
-                    
+
                     // Fonction pour télécharger les informations du patient
                     function downloadPatientInfo() {
                         // Récupérer le contenu à télécharger
                         const patientName = document.getElementById('patientInfoLabel').textContent.replace('Dossier Patient: ', '');
                         const content = document.getElementById('patientInfoContent').innerText;
-                        
+
                         // Créer un blob avec le contenu
-                        const blob = new Blob([content], { type: 'text/plain' });
+                        const blob = new Blob([content], {
+                            type: 'text/plain'
+                        });
                         const url = URL.createObjectURL(blob);
-                        
+
                         // Créer un lien de téléchargement
                         const a = document.createElement('a');
                         a.href = url;
                         a.download = `Dossier_Patient_${patientName.replace(' ', '_')}.txt`;
-                        
+
                         // Déclencher le téléchargement
                         document.body.appendChild(a);
                         a.click();
-                        
+
                         // Nettoyer
                         document.body.removeChild(a);
                         URL.revokeObjectURL(url);
@@ -280,4 +293,5 @@
         </div>
     </div>
 </body>
+
 </html>

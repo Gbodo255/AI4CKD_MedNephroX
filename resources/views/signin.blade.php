@@ -32,7 +32,7 @@
                     </div>
                     <div class="champ">
                         <label for="">Email</label> <br>
-                        <input type="mail" name="email" id="email">
+                        <input type="email" name="email" id="email">
                     </div>
                     <div class="champ">
                         <label for="">Mot de passe</label> <br>

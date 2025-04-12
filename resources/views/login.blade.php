@@ -16,7 +16,7 @@
         <form class="myform" action="{{ route('logitraitpage') }}" method="post">
             @csrf
             <div class="champ">
-                <label for="">Nom utilisateur</label> <br>
+                <label for="">Email</label> <br>
                 <input type="email" name="email" id="email">
             </div>
             <div class="champ">

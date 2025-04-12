@@ -96,11 +96,6 @@ body {
     background-color: #4e73df;
 }
 
-.workspace {
-    display: block;
-    margin-left: 210px;
-}
-
 .navbar {
     width: 1013px;
     height: 52px;
@@ -136,8 +131,10 @@ body {
 .part1 input {
     width: 380px;
     height: 30px;
-    border: 1px solid gray;
-    border-radius: 5px;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+    font-family: 'nunito';
+    font-size: 20px;
 }
 
 .part1 {
@@ -165,9 +162,14 @@ body {
 
 .statistiques {
     height: 100px;
+    width: auto;
     display: flex;
     justify-content: space-around;
     padding: 2%;
+}
+
+.statistiques div {
+    margin-left: 3%;
 }
 
 .total {
@@ -223,44 +225,44 @@ body {
 
 .graphes {
     display: flex;
-    justify-content: space-around;
 }
 
 .stades {
-    width: 350px;
-    height: 400px;
+    width: 330px;
+    height: 428px;
     border-radius: 15px;
     background-color: white;
 }
 
+.graphes div {
+    margin-left: 5%;
+}
+
 .graphique {
-    width: 350px;
-    height: 400px;
+    width: 330px;
+    height: 428px;
     border-radius: 15px;
     background-color: white;
 }
 
 .notify {
     width: 230px;
-    height: 400px;
-    margin-left: 74%;
-    margin-top: -60.5%;
-    padding: 1%;
-    padding-top: 0%;
+    height: 530px;
+    margin-top: 1.5%;
 }
 
 .agenda {
     border-radius: 15px;
-    width: 235px;
-    height: 210px;
+    width: 215px;
+    height: 250px;
     margin-bottom: 5%;
     background-color: white;
 }
 
 .mynotif {
     border-radius: 15px;
-    width: 235px;
-    height: 300px;
+    width: 215px;
+    height: 280px;
     background-color: white;
 }
 
@@ -296,18 +298,17 @@ body {
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
+
+  .surle:hover {
+    background-color: rgba(128, 128, 128, 0.078);
+  }
   
   .patient-table thead {
     background-color: #0d6efd;
     color: #fff;
   }
-  
-  .patient-table tr:hover {
-    background-color: #f1f1f1;
-    transition: background-color 0.3s ease;
-  }
 
-  
+
   .add {
     margin-left: 83%;
     border: 1px solid #0d6efd;
@@ -325,4 +326,16 @@ body {
   .add:hover {
     color: white;
     background-color: #0d6efd;
+  }
+
+  .listePatientDash {
+    width: 940px;
+    height: auto;
+    margin-left: 4%;
+    font-family: 'nunito';
+    margin-bottom: 5%;
+  }
+
+  .listePatientDash h2 {
+    text-align: center;
   }

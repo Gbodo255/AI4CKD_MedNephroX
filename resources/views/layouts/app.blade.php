@@ -39,10 +39,8 @@
                     <img src="" alt="" class="profil">
                 </div>
             </div>
-            <div class="spacework">
-                {{-- Le contenu spécifique à chaque vue --}}
-                @yield('content')
-            </div>
+            {{-- Le contenu spécifique à chaque vue --}}
+            @yield('content')
         </div>
     </div>
 

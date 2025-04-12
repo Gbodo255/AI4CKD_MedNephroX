@@ -16,7 +16,7 @@ class LoginController extends Controller
 
     public function traitlogin(Request $request)
     {
-        $email = $request->input('email');
+        $email = $request->input('email'); 
         $motDePasse = $request->input('motDePasse');
 
         $doctor = Doctors::where('email', $email)->first();
